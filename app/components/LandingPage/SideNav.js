@@ -50,7 +50,7 @@ const MenuContent = props => {
           {getMenus(menuList)}
         </List>
         <Typography variant="caption" className={classes.copyright}>
-          &copy; 2019 Dandelion Designs
+          &copy; 2020 Edstellar
           <br />
           All Right Reserved
         </Typography>

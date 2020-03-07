@@ -31,16 +31,16 @@ const styles = theme => ({
 
 const content = [
   {
-    title: 'Vulputate Mollis Ultricies',
+    title: 'Neural Networks in security systems',
     description:
-    'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.',
-    button: 'Watch Video',
+    'New Course Material on Nueral Networks for Level 2 Engineers.',
+    button: 'View Course',
     image: imgApi[8],
     label: 'Uploaded to',
     tag: 'Just Uploaded',
-    to: 'Lorem Video',
+    to: 'Upcoming cources',
     userProfile: imgApi[54],
-    type: 'video',
+    type: 'article',
   },
   {
     title: 'Tortor Dapibus Fermentum',

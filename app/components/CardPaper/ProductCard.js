@@ -37,14 +37,14 @@ class ProductCard extends React.Component {
     } = this.props;
     return (
       <Card className={classNames(classes.cardProduct, isWidthUp('sm', width) && list ? classes.cardList : '')}>
-        <div className={classes.status}>
+        {/* <div className={classes.status}>
           {discount !== '' && (
             <Chip label={'Discount ' + discount} className={classes.chipDiscount} />
           )}
           {soldout && (
             <Chip label="Sold Out" className={classes.chipSold} />
           )}
-        </div>
+        </div> */}
         <CardMedia
           className={classes.mediaProduct}
           image={thumbnail}
@@ -69,7 +69,7 @@ class ProductCard extends React.Component {
           </div>
         </CardContent>
         <CardActions className={classes.price}>
-          <Typography variant="h5">
+          {/* <Typography variant="h5">
             <span>
               $
               {price}
@@ -82,7 +82,7 @@ class ProductCard extends React.Component {
                 {prevPrice}
               </span>
             </Typography>
-          )}
+          )} */}
           <div className={classes.rightAction}>
             <Button size="small" variant="outlined" color="secondary" onClick={detailOpen}>
               See Detail
