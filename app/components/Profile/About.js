@@ -154,7 +154,7 @@ class About extends React.Component {
               </ListItem>
               <ListItem button>
                 <Avatar className={classNames(classes.avatar, classes.purpleAvatar)}>J</Avatar>
-                <ListItemText primary="John DOe" secondary="8 Mutual Connection" />
+                <ListItemText primary="Arvind Rongala" secondary="8 Mutual Connection" />
               </ListItem>
               <ListItem button>
                 <Avatar className={classNames(classes.avatar, classes.pinkAvatar)}>V</Avatar>
