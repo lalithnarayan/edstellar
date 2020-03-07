@@ -345,6 +345,11 @@ export const CheckoutPage = loadable(() =>
   import ('./Pages/Ecommerce/CheckoutPage'), {
     fallback: <Loading />,
   });
+
+export const AdvanceSearchPage = loadable(() =>
+  import ('./Pages/Ecommerce/AdvanceSearch'), {
+    fallback: <Loading />,
+  });
 export const Contact = loadable(() =>
   import ('./Pages/Contact'), {
     fallback: <Loading />,

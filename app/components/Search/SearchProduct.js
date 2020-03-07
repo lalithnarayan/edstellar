@@ -42,7 +42,8 @@ class SearchProduct extends React.Component {
       keyword,
       dataProduct,
       handleSwitchView,
-      listView
+      listView,
+      placeholder
     } = this.props;
 
     const getTotalResult = dataArray => {
@@ -67,7 +68,7 @@ class SearchProduct extends React.Component {
                 <div className={classes.search}>
                   <SearchIcon />
                 </div>
-                <input className={classes.input} placeholder="Search Product" onChange={(event) => search(event)} />
+                <input className={classes.input} placeholder={placeholder || "Search Projects"} onChange={(event) => search(event)} />
               </div>
             </div>
             <Typography variant="caption" className={classes.result}>
@@ -86,7 +87,7 @@ class SearchProduct extends React.Component {
                 </ToggleButtonGroup>
               </div>
             </Hidden>
-            <div className={classes.cart}>
+            {/* <div className={classes.cart}>
               <IconButton
                 color="inherit"
                 aria-owns={anchorEl ? 'simple-menu' : null}
@@ -97,15 +98,15 @@ class SearchProduct extends React.Component {
                   <ShoppingCartIcon />
                 </Badge>
               </IconButton>
-              <Cart
+              {/* <Cart
                 anchorEl={anchorEl}
                 dataCart={dataCart}
                 close={this.handleClose}
                 removeItem={removeItem}
                 checkout={checkout}
                 totalPrice={totalPrice}
-              />
-            </div>
+              /> */}
+            {/* </div> */}
           </Toolbar>
         </AppBar>
       </div>

@@ -90,6 +90,9 @@ class Checkout extends React.Component {
     this.setState(state => ({
       activeStep: state.activeStep + 1,
     }));
+    if(this.state.activeStep + 1 === steps.length) {
+      location.href='/app/advancesearch';
+    }
   };
 
   handleBack = () => {
@@ -115,11 +118,11 @@ class Checkout extends React.Component {
             <Fragment>
               {activeStep === steps.length ? (
                 <div className={classes.finishMessage}>
-                  <Typography variant="h4" gutterBottom>
+                  {/* <Typography variant="h4" gutterBottom>
                     <span>
                       <Ionicon icon="ios-checkmark-circle-outline" />
                     </span>
-                    Thank you for your cr.
+                    Thank you for yoy
                   </Typography>
                   <Typography variant="subtitle1">
                     Your order number is&nbsp;
@@ -129,7 +132,7 @@ class Checkout extends React.Component {
                   </Typography>
                   <Button variant="contained" color="primary" href="/app/pages/ecommerce" className={classes.button}>
                     Shoping Again
-                  </Button>
+                  </Button> */}
                 </div>
               ) : (
                 <Fragment>

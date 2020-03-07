@@ -41,7 +41,7 @@ class LeftSidebarLayout extends React.Component {
           position="left-sidebar"
           changeMode={changeMode}
           mode={mode}
-          title={place}
+          // title={place}
           history={history}
           openGuide={handleOpenGuide}
         />

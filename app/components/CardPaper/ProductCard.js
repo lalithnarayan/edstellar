@@ -17,6 +17,7 @@ import Fab from '@material-ui/core/Fab';
 import Type from 'dan-styles/Typography.scss';
 import Rating from '../Rating/Rating';
 import styles from './cardStyle-jss';
+import Ionicon from 'react-ionicons';
 
 class ProductCard extends React.Component {
   render() {
@@ -34,6 +35,9 @@ class ProductCard extends React.Component {
       detailOpen,
       addToCart,
       width,
+      is_trainer,
+      is_high_demand,
+      courses
     } = this.props;
     return (
       <Card className={classNames(classes.cardProduct, isWidthUp('sm', width) && list ? classes.cardList : '')}>
@@ -60,29 +64,47 @@ class ProductCard extends React.Component {
           )}
           <Typography noWrap gutterBottom variant="h5" className={classes.title} component="h2">
             {name}
+
           </Typography>
+          {
+            is_trainer && is_high_demand ? (<div><Ionicon color="#FF0000" icon={'ios-alert'} /><Typography color="error" noWrap gutterBottom component="span">
+              In High demand
+  
+          </Typography></div>) : null
+          }
+
           <Typography component="p" className={classes.desc}>
             {desc}
           </Typography>
           <div className={classes.ratting}>
             <Rating value={ratting} max={5} readOnly />
           </div>
+          {
+            is_trainer ? (<Typography color="primary" noWrap gutterBottom variant="h5" component="h5" style={{ paddingTop: '18px' }}>
+              {parseInt(courses * 100)} Trainings given
+          </Typography>) : null
+          }
+                    {
+            is_trainer ? (<Button size="medium" variant="contained" color="secondary" onClick={detailOpen}>
+             Shortlist
+          </Button>) : null
+          }
         </CardContent>
         <CardActions className={classes.price}>
-          {/* <Typography variant="h5">
+          <Typography variant="h5">
             <span>
-              $
+              Rs
               {price}
             </span>
           </Typography>
           {prevPrice > 0 && (
             <Typography variant="caption" component="h5">
               <span className={Type.lineThrought}>
-                $
+                Rs
                 {prevPrice}
               </span>
             </Typography>
-          )} */}
+          )}
           <div className={classes.rightAction}>
             <Button size="small" variant="outlined" color="secondary" onClick={detailOpen}>
               See Detail

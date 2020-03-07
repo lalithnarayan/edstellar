@@ -49,8 +49,8 @@ class Header extends React.Component {
       this.flagDarker = newFlagDarker;
     }
     if (this.flagTitle !== newFlagTitle) {
-      this.setState({ showTitle: newFlagTitle });
-      this.flagTitle = newFlagTitle;
+      // this.setState({ showTitle: newFlagTitle });
+      // this.flagTitle = newFlagTitle;
     }
   }
 

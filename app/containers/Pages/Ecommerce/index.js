@@ -73,6 +73,7 @@ class Ecommerce extends React.Component {
           keyword={keyword}
           listView={listView}
           handleSwitchView={this.handleSwitchView}
+
         />
         <ProductGallery
           listView={listView}
