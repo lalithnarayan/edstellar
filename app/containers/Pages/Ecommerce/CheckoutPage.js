@@ -11,8 +11,6 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Ionicon from 'react-ionicons';
-import { SelectSuggestionTags} from '../../Forms/demos';
-import { SearchLocation } from '../../Maps/demos'
 import {
   AddressForm,
   PaymentForm,
@@ -20,6 +18,8 @@ import {
   AdvanceSearchForm,
   SideReview
 } from 'dan-components';
+import { SelectSuggestionTags } from '../../Forms/demos';
+import { SearchLocation } from '../../Maps/demos';
 
 const styles = theme => ({
   appBar: {
@@ -62,17 +62,17 @@ const styles = theme => ({
   },
 });
 
-const steps = ['Project Details', 'Venue' ,'Budget', 'Review'];
+const steps = ['Project Details', 'Venue', 'Budget', 'Review'];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
       return <AddressForm />;
     case 1:
-        return <div><SearchLocation/></div>;
+      return <div><SearchLocation /></div>;
     case 2:
       return <PaymentForm />;
-    // case 3: 
+    // case 3:
     //   return <AdvanceSearchForm/>
     case 3:
       return <Review />;
@@ -90,8 +90,8 @@ class Checkout extends React.Component {
     this.setState(state => ({
       activeStep: state.activeStep + 1,
     }));
-    if(this.state.activeStep + 1 === steps.length) {
-      location.href='/app/advancesearch';
+    if (this.state.activeStep + 1 === steps.length) {
+      location.href = '/app/advancesearch';
     }
   };
 
@@ -136,8 +136,8 @@ class Checkout extends React.Component {
                 </div>
               ) : (
                 <Fragment>
-                  <Grid container spacing={3} justify = "center">
-                    <Grid item xs={12} md={7} >
+                  <Grid container spacing={3} justify="center">
+                    <Grid item xs={12} md={7}>
                       <Stepper activeStep={activeStep} className={classes.stepper} alternativeLabel={isWidthDown('sm', width)}>
                         {steps.map(label => (
                           <Step key={label}>

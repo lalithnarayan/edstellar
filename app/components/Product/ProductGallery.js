@@ -27,8 +27,7 @@ class ProductGallery extends React.Component {
       handleAddToCart,
       productIndex,
       keyword,
-      listView,
-      is_trainer
+      listView
     } = this.props;
 
     return (
@@ -71,11 +70,10 @@ class ProductGallery extends React.Component {
                     prevPrice={product.get('prevPrice')}
                     discount={product.get('discount')}
                     soldout={product.get('soldout')}
-                    is_high_demand={product.get('is_high_demand')}
+                    highDemand={product.get('highDemand')}
                     courses={product.get('courses')}
                     detailOpen={() => this.handleDetailOpen(product)}
                     addToCart={() => handleAddToCart(itemAttr)}
-                    is_trainer={is_trainer}
                   />
                 </Grid>
               );

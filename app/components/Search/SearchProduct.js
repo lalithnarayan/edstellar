@@ -68,7 +68,7 @@ class SearchProduct extends React.Component {
                 <div className={classes.search}>
                   <SearchIcon />
                 </div>
-                <input className={classes.input} placeholder={placeholder || "Search Projects"} onChange={(event) => search(event)} />
+                <input className={classes.input} placeholder={placeholder || 'Search Projects'} onChange={(event) => search(event)} />
               </div>
             </div>
             <Typography variant="caption" className={classes.result}>

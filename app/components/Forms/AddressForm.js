@@ -6,7 +6,7 @@ import { DatePicker, KeyboardDatePicker, MuiPickersUtilsProvider } from '@materi
 import MomentUtils from '@date-io/moment';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import { SelectSuggestionTags } from '../../containers/Forms/demos'
+import { SelectSuggestionTags } from '../../containers/Forms/demos';
 
 
 function AddressForm() {
@@ -70,7 +70,10 @@ function AddressForm() {
             />
           </MuiPickersUtilsProvider>
         </Grid>
-        <Grid item xs={12} sm={6}
+        <Grid
+          item
+          xs={12}
+          sm={6}
           style={{ display: 'flex' }}
         >
           <FormControlLabel
