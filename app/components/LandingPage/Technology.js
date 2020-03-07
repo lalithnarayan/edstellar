@@ -75,7 +75,7 @@ class Technology extends React.Component {
       <div className={classes.tech}>
         {!slideMode && (<ParallaxDecoStyled />)}
         <div className={slideMode ? classes.fullWidth : classes.container}>
-          <Title title="Training Experts in" desc="We specialize in finding the right and the brightest talent" align="center" monocolor={slideMode && true} />
+          <Title title="Over 350 Training Experts" desc="We specialize in finding the right and the brightest talent" align="center" monocolor={slideMode && true} />
           <Grid container className={classes.root} spacing={3}>
             <Grid item sm={4} xs={12}>
               <div className={classNames(classes.wool, slideMode && classes.slideMode)}>
@@ -88,7 +88,7 @@ class Technology extends React.Component {
                 <figure>
                   <img src={routerLogo} alt="react router" />
                 </figure>
-                <Typography variant="h5" className={classes.router}>Database Administrator</Typography>
+                <Typography variant="h5" className={classes.router}>Project Management</Typography>
               </div>
             </Grid>
             <Grid item sm={4} xs={12}>
@@ -97,7 +97,7 @@ class Technology extends React.Component {
                   <figure>
                     <img src={reduxLogo} alt="redux" />
                   </figure>
-                  <Typography variant="h5" className={classes.redux}>Microservices Architecture</Typography>
+                  <Typography variant="h5" className={classes.redux}>IT Security and Governance</Typography>
                 </div>
                 <Hidden smDown>
                   <Button variant="contained" size="large" color="secondary">Find your Training Expert now</Button>
@@ -106,7 +106,7 @@ class Technology extends React.Component {
                   <figure>
                     <img src={webpackLogo} alt="webpack" />
                   </figure>
-                  <Typography variant="h5" className={classes.webpack}>Container Applications</Typography>
+                  <Typography variant="h5" className={classes.webpack}>Cloud Computing</Typography>
                 </div>
               </div>
             </Grid>

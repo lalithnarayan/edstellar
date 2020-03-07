@@ -96,6 +96,9 @@ class Header extends React.Component {
                         <Button component={AnchorLink} href={item.url}>{item.name}</Button>
                       </li>
                     )) }
+                    <li key="signin">
+                      <Button onClick="window.location.href=/app;" href="/app">Login</Button>
+                    </li>
                   </Scrollspy>
                 </nav>
               </Hidden>

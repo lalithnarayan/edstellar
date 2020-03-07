@@ -106,7 +106,7 @@ class SidebarContent extends React.Component {
                   </MenuItem>
                   <MenuItem onClick={() => changeStatus('bussy')}>
                     <i className={classNames(classes.dotStatus, classes.bussy)} />
-                    Bussy
+                    Busy
                   </MenuItem>
                   <MenuItem onClick={() => changeStatus('offline')}>
                     <i className={classNames(classes.dotStatus, classes.offline)} />

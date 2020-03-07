@@ -93,7 +93,7 @@ class TaskBoard extends Component {
           addCardLink={(
             <Button>
               <AddIcon className={classes.leftIcon} />
-              &nbsp;Add Task
+              &nbsp;Add Project
             </Button>
           )}
         >

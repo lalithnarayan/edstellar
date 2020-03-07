@@ -2,127 +2,127 @@ const taskBoardData = {
   lanes: [
     {
       id: 'PLANNED',
-      title: 'Planned Tasks',
+      title: 'Training Searches',
       color: '#2096f3',
       label: '20/70',
       cards: [
         {
           id: 'Milk',
-          title: 'Buy milk',
+          title: 'DB Advanced Training',
           label: '15 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: '2 Gallons of milk at the Deli store',
+          description: 'Trainer for Oracle 10G DBA',
           tags: [
-            { title: 'Error', color: 'white', bgcolor: '#F44336' },
-            { title: 'Warning', color: 'white', bgcolor: '#FF9800' },
+            { title: 'Priority', color: 'white', bgcolor: '#F44336' },
+            { title: 'Notifications', color: 'white', bgcolor: '#FF9800' },
           ]
         },
         {
           id: 'Plan2',
-          title: 'Dispose Garbage',
+          title: 'Scrum Master',
           label: '10 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Sort out recyclable and waste as needed',
+          description: 'Scrum Master Trainer Needed in Ontario',
           tags: [
             { title: 'Info', color: 'white', bgcolor: '#0288D1' },
-            { title: 'Success', color: 'white', bgcolor: '#388E3C' },
+            { title: 'Feature', color: 'white', bgcolor: '#388E3C' },
           ]
         },
         {
           id: 'Plan3',
-          title: 'Write Blog',
+          title: 'Scrum Master',
           label: '30 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Can AI make memes?',
+          description: 'Scrum Master Trainer for NYC',
           tags: [
-            { title: 'Warning', color: 'white', bgcolor: '#FF9800' },
+            { title: 'Notifications', color: 'white', bgcolor: '#FF9800' },
           ]
         },
         {
           id: 'Plan4',
-          title: 'Pay Rent',
+          title: 'UX DLS Trainer',
           label: '5 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Transfer to bank account',
+          description: 'Design Language System Definition Trainer',
           tags: [
-            { title: 'Error', color: 'white', bgcolor: '#F44336' },
-            { title: 'Warning', color: 'white', bgcolor: '#FF9800' },
-            { title: 'Success', color: 'white', bgcolor: '#388E3C' },
+            { title: 'Priority', color: 'white', bgcolor: '#F44336' },
+            { title: 'Notifications', color: 'white', bgcolor: '#FF9800' },
+            { title: 'Feature', color: 'white', bgcolor: '#388E3C' },
           ]
         }
       ]
     },
     {
       id: 'WIP',
-      title: 'Work In Progress',
+      title: 'Shortlisting Started',
       color: '#AB47BC',
       label: '10/20',
       cards: [
         {
           id: 'Wip1',
-          title: 'Clean House',
+          title: 'Oracle DBA Trainer',
           label: '30 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses',
+          description: 'Accenture GBS: Oracle 11G, 12G trainer required at ITPB, Bangalore',
           tags: [
-            { title: 'Error', color: 'white', bgcolor: '#F44336' },
-            { title: 'Success', color: 'white', bgcolor: '#388E3C' },
+            { title: 'Priority', color: 'white', bgcolor: '#F44336' },
+            { title: 'Feature', color: 'white', bgcolor: '#388E3C' },
           ]
         },
         {
           id: 'Archived1',
-          title: 'Go Trekking',
+          title: 'Dev Ops Training: AWS',
           label: '300 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Completed 10km on cycle',
+          description: 'ZipGo: AWS Trainer needed for EC2, ElasticBealstalk, Container Service and Route53 at Indiranagar, Bangalore',
           tags: [
             { title: 'Info', color: 'white', bgcolor: '#0288D1' },
-            { title: 'Error', color: 'white', bgcolor: '#F44336' },
-            { title: 'Warning', color: 'white', bgcolor: '#FF9800' },
-            { title: 'Success', color: 'white', bgcolor: '#388E3C' },
+            { title: 'Priority', color: 'white', bgcolor: '#F44336' },
+            { title: 'Notifications', color: 'white', bgcolor: '#FF9800' },
+            { title: 'Feature', color: 'white', bgcolor: '#388E3C' },
             { title: 'Info', color: 'white', bgcolor: '#0288D1' },
-            { title: 'Error', color: 'white', bgcolor: '#F44336' },
-            { title: 'Warning', color: 'white', bgcolor: '#FF9800' },
-            { title: 'Success', color: 'white', bgcolor: '#388E3C' },
+            { title: 'Priority', color: 'white', bgcolor: '#F44336' },
+            { title: 'Notifications', color: 'white', bgcolor: '#FF9800' },
+            { title: 'Feature', color: 'white', bgcolor: '#388E3C' },
           ]
         }
       ]
     },
     {
       id: 'BLOCKED',
-      title: 'Blocked',
+      title: 'TRAINING IN PROGRESS',
       color: '#EC407A',
       label: '0/0',
       cards: [
         {
           id: 'Repeat1',
-          title: 'Morning Jog',
+          title: 'Network Security',
           label: '30 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Track using fitbit',
+          description: 'Flipkart: Deploying Network Security with Multi A-Z Zone isolation at Pune',
           tags: [
-            { title: 'Error', color: 'white', bgcolor: '#F44336' },
+            { title: 'Priority', color: 'white', bgcolor: '#F44336' },
           ]
         }
       ]
@@ -135,57 +135,57 @@ const taskBoardData = {
       cards: [
         {
           id: 'Completed1',
-          title: 'Practice Meditation',
+          title: 'DBA for PostGres',
           label: '15 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Use Headspace app'
+          description: 'HDFC Bank: Database Architect for Security Aspects of Multi-Tenant Deployments at PGL, New Delhi'
         },
         {
           id: 'Completed2',
-          title: 'Maintain Daily Journal',
+          title: 'SAP HANA Training',
           label: '15 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Use Spreadsheet for now'
+          description: 'Accenture: SAP HANA Training for v2 migrations at ITPL, Bangalore'
         },
         {
           id: 'Archived1',
-          title: 'Go Trekking',
+          title: 'GoLang Foundation',
           label: '300 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Completed 10km on cycle',
+          description: 'Tata Consultancy: Foundation Course for GoLang in Web Services at ITPL, Bangalore',
           tags: [
             { title: 'Info', color: 'white', bgcolor: '#0288D1' },
-            { title: 'Warning', color: 'white', bgcolor: '#FF9800' },
+            { title: 'Notifications', color: 'white', bgcolor: '#FF9800' },
           ]
         }
       ]
     },
     {
       id: 'ARCHIVED',
-      title: 'Archived2',
-      color: '#FF5722',
+      title: 'Blocked',
+      color: 'grey',
       label: '1/1',
       cards: [
         {
           id: 'Archived1',
-          title: 'Go Trekking',
+          title: 'R3 Corda Trainer',
           label: '300 mins',
           cardStyle: {
             margin: 'auto',
             marginBottom: 5
           },
-          description: 'Completed 10km on cycle',
+          description: 'MuSigma: Looking for R3 Corda Blockchain trainer in Bangalore',
           tags: [
-            { title: 'Info', color: 'white', bgcolor: '#0288D1' },
+            { title: 'UnMatched', color: 'white', bgcolor: 'grey' },
           ]
         }
       ]
