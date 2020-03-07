@@ -11,6 +11,8 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Ionicon from 'react-ionicons';
+import { SelectSuggestionTags} from '../../Forms/demos';
+import { SearchLocation } from '../../Maps/demos'
 import {
   AddressForm,
   PaymentForm,
@@ -59,15 +61,17 @@ const styles = theme => ({
   },
 });
 
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = ['Project Details', 'Venue' ,'Budget', 'Review'];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
       return <AddressForm />;
     case 1:
-      return <PaymentForm />;
+        return <div><SearchLocation/></div>;
     case 2:
+      return <PaymentForm />;
+    case 3:
       return <Review />;
     default:
       throw new Error('Unknown step');
@@ -126,8 +130,8 @@ class Checkout extends React.Component {
                 </div>
               ) : (
                 <Fragment>
-                  <Grid container spacing={3}>
-                    <Grid item xs={12} md={7}>
+                  <Grid container spacing={3} justify = "center">
+                    <Grid item xs={12} md={7} >
                       <Stepper activeStep={activeStep} className={classes.stepper} alternativeLabel={isWidthDown('sm', width)}>
                         {steps.map(label => (
                           <Step key={label}>
@@ -139,9 +143,9 @@ class Checkout extends React.Component {
                       </Stepper>
                       {getStepContent(activeStep)}
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    {/* <Grid item xs={12} md={5}>
                       <SideReview />
-                    </Grid>
+                    </Grid> */}
                   </Grid>
                   <div className={classes.buttons}>
                     {activeStep !== 0 && (

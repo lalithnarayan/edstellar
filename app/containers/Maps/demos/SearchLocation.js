@@ -32,7 +32,7 @@ const styles = theme => ({
 
 const MapWithASearchBox = compose(
   withProps({
-    googleMapURL: 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places',
+    googleMapURL: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD1UkFBJiEOM3Ld6N_WdFxfAuCY2qlNguw&v=3.exp&libraries=geometry,drawing,places',
     loadingElement: <div style={{ height: '100%' }} />,
     containerElement: <div style={{ height: '400px' }} />,
     mapElement: <div style={{ height: '100%' }} />,
@@ -103,7 +103,7 @@ const MapWithASearchBox = compose(
     >
       <input
         type="text"
-        placeholder="Customized your placeholder"
+        placeholder="Please enter the training location"
         className={props.classes.searchBox}
       />
     </SearchBox>

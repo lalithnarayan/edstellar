@@ -2,92 +2,81 @@ import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
+import { DatePicker, KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+import MomentUtils from '@date-io/moment';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import { SelectSuggestionTags } from '../../containers/Forms/demos'
+
 
 function AddressForm() {
+  const selectedDate = new Date();
   return (
     <Fragment>
       <Typography variant="h6" gutterBottom>
-        Shipping address
+        Project
       </Typography>
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
+      <Grid container spacing={3} alignContent="center">
+        <Grid item xs={12} sm={12}>
           <TextField
             required
             id="firstName"
             name="firstName"
-            label="First name"
+            label="Project Title"
             fullWidth
             autoComplete="fname"
+            variant="outlined"
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12}>
           <TextField
             required
             id="lastName"
             name="lastName"
-            label="Last name"
+            label="Description"
             fullWidth
             autoComplete="lname"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            required
-            id="address1"
-            name="address1"
-            label="Address line 1"
-            fullWidth
-            autoComplete="billing address-line1"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            id="addiress2"
-            name="addiress2"
-            label="Address line 2"
-            fullWidth
-            autoComplete="billing address-line2"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="city"
-            name="city"
-            label="City"
-            fullWidth
-            autoComplete="billing address-level2"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField id="state" name="state" label="State/Province/Region" fullWidth />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="zip"
-            name="zip"
-            label="Zip / Postal code"
-            fullWidth
-            autoComplete="billing postal-code"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="country"
-            name="country"
-            label="Country"
-            fullWidth
-            autoComplete="billing country"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12}>
           <FormControlLabel
             control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
-            label="Use this address for payment details"
+            label="All course content is required in the form of course material"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <SelectSuggestionTags />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <MuiPickersUtilsProvider utils={MomentUtils}>
+            <KeyboardDatePicker
+              clearable
+              label="Start Date"
+              value={selectedDate}
+              onChange={() => { }}
+              animateYearScrolling={false}
+              fullWidth
+            />
+          </MuiPickersUtilsProvider>
+          <MuiPickersUtilsProvider utils={MomentUtils}>
+            <KeyboardDatePicker
+              clearable
+              label="End Date"
+              value={selectedDate}
+              onChange={() => { }}
+              animateYearScrolling={false}
+              fullWidth
+            />
+          </MuiPickersUtilsProvider>
+        </Grid>
+        <Grid item xs={12} sm={6}
+          style={{ display: 'flex' }}
+        >
+          <FormControlLabel
+
+            control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
+            label="One day training"
           />
         </Grid>
       </Grid>
