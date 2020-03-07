@@ -6,9 +6,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
-import { SearchProduct, ProductGallery, Notification } from 'dan-components';
-import Ecommerce from '../Pages/Ecommerce/index';
 import {
+  SearchProduct, ProductGallery, Notification,
   SliderWidget,
   CounterIconsWidget,
   PerformanceChartWidget,
@@ -19,6 +18,8 @@ import {
   TimelineWidget,
   FilesWidget,
 } from 'dan-components';
+import Ecommerce from '../Pages/Ecommerce/index';
+
 import styles from './dashboard-jss';
 
 
@@ -48,7 +49,7 @@ class PersonalDashboard extends PureComponent {
             </div>
           </Grid>
         </Grid>
-        <Ecommerce/>
+        <Ecommerce />
       </div>
     );
   }
@@ -61,32 +62,31 @@ PersonalDashboard.propTypes = {
 export default withStyles(styles)(PersonalDashboard);
 
 
-
-        // {/* <Divider className={classes.divider} />
-        // {/* 2nd Section */}
-        // <Grid container spacing={2} className={classes.root}>
-        //   <Grid item xs={12}>
-        //     <PerformanceChartWidget />
-        //   </Grid>
-        // </Grid>
-        // {/* 3rd Section */}
-        // <Grid container spacing={3} className={classes.root}>
-        //   <Grid item md={6} xs={12}>
-        //     <Divider className={classes.divider} />
-        //     <ContactWidget />
-        //     <Divider className={classes.divider} />
-        //     <TaskWidget />
-        //   </Grid>
-        //   <Grid item md={6} xs={12}>
-        //     <Hidden mdDown>
-        //       <Divider className={classes.divider} />
-        //     </Hidden>
-        //     <WeatherWidget />
-        //     <Divider className={classes.divider} />
-        //     <DateWidget />
-        //     <Divider className={classes.divider} />
-        //     <TimelineWidget />
-        //   </Grid>
-        // </Grid>
-        // <Divider className={classes.divider} />
-        // <FilesWidget /> */}
+// {/* <Divider className={classes.divider} />
+// {/* 2nd Section */}
+// <Grid container spacing={2} className={classes.root}>
+//   <Grid item xs={12}>
+//     <PerformanceChartWidget />
+//   </Grid>
+// </Grid>
+// {/* 3rd Section */}
+// <Grid container spacing={3} className={classes.root}>
+//   <Grid item md={6} xs={12}>
+//     <Divider className={classes.divider} />
+//     <ContactWidget />
+//     <Divider className={classes.divider} />
+//     <TaskWidget />
+//   </Grid>
+//   <Grid item md={6} xs={12}>
+//     <Hidden mdDown>
+//       <Divider className={classes.divider} />
+//     </Hidden>
+//     <WeatherWidget />
+//     <Divider className={classes.divider} />
+//     <DateWidget />
+//     <Divider className={classes.divider} />
+//     <TimelineWidget />
+//   </Grid>
+// </Grid>
+// <Divider className={classes.divider} />
+// <FilesWidget /> */}

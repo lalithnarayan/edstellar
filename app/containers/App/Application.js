@@ -126,7 +126,7 @@ class Application extends React.Component {
           <Route path="/app/pages/calendar" component={Calendar} />
           <Route path="/app/pages/taskboard" component={TaskBoard} />
           <Route path="/app/pages/invoice" component={Invoice} />
-          <Route path="/app/advancesearch"  component={AdvanceSearchPage} />
+          <Route path="/app/advancesearch" component={AdvanceSearchPage} />
           { /* Pages */ }
           <Route exact path="/app/pages" component={Parent} />
           <Route path="/app/pages/user-profile" component={Profile} />

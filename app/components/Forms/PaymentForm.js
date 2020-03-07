@@ -15,7 +15,7 @@ import {
   DashDivider,
   ShadowDivider,
   InsetDivider,
-} from '../../components/Divider';
+} from '../Divider';
 
 function PaymentForm() {
   return (
@@ -103,7 +103,7 @@ function PaymentForm() {
               <TextField required id="cardName" label="Amount" fullWidth />
             </Grid>
           </Grid>
-          <GradientDivider/>
+          <GradientDivider />
           <Grid container justify="center">
             <Grid item xs={12}>
               <FormControlLabel
