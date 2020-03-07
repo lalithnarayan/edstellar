@@ -16,26 +16,26 @@ class Pricing extends React.Component {
           <Grid container className={classes.root} spacing={5}>
             <Grid item md={4} xs={12}>
               <PricingCard
-                title="For Learn"
+                title="For Startups"
                 price="FREE"
                 tier="free"
-                feature={['Vel fermentum', 'Aenean facilisis vitae', 'Vestibulum nec']}
+                feature={['Advanced Search', 'Trainer Suggestions', 'Work Tracking Board', 'Trainer Schedule Management', 'FAQ Support']}
               />
             </Grid>
             <Grid item md={4} xs={12}>
               <PricingCard
-                title="Recomended"
+                title="Enterprise"
                 price="$24"
                 tier="cheap"
-                feature={['Vel fermentum', 'Aenean facilisis vitae', 'Vestibulum nec', 'Pellentesque ac bibendum', 'Vivamus sit amet']}
+                feature={['Free Tier +', 'Expertize Search', 'Trainer Comparison', 'Course Material', 'Training Management Dashboard', 'Basic Support']}
               />
             </Grid>
             <Grid item md={4} xs={12}>
               <PricingCard
                 title="Extended"
-                price="$200"
+                price="$50"
                 tier="expensive"
-                feature={['Vel fermentum', 'Aenean facilisis vitae', 'Vestibulum nec', 'Pellentesque ac bibendum', 'Vivamus sit amet']}
+                feature={['Enterprise +', 'Dedicated Training Manager', 'Advanced Project Tracking Board', 'Sourcing', '24x7 Support']}
               />
             </Grid>
           </Grid>

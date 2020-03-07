@@ -15,19 +15,19 @@ import styles from './landingStyle-jss';
 
 const content = [
   {
-    title: 'Vulputate Mollis Ultricies',
+    title: 'My Business was never better',
     image: imgApi[11],
-    user: 'Luanda Gjokaj',
+    user: 'Akshay Rajendran',
   },
   {
-    title: 'Tortor Dapibus Commodo',
+    title: 'Very Skilled and Niche',
     image: imgApi[14],
-    user: 'Erich Behrens',
+    user: 'Kartik Malayyar',
   },
   {
-    title: 'Phasellus volutpat metus',
+    title: 'Fits my needs and Budgets',
     image: imgApi[15],
-    user: 'Bruno Vizovskyy',
+    user: 'Ankit Chaurasia',
   }
 ];
 
@@ -104,6 +104,7 @@ class Testimonials extends React.Component {
                   </IconButton>
                   <p className={classNames(classes.videoCaption, slideMode ? classes.mono : classes.color)}>
                     <Typography variant="h6" component="span" className={Type.light} gutterBottom>{item.title}</Typography>
+                    <br />
                     <Typography component="span">{item.user}</Typography>
                   </p>
                 </div>

@@ -74,28 +74,28 @@ class Showcase extends React.Component {
             <Grid item sm={6} md={4} xs={12}>
               <Title title="Showcase" align={width === 'lg' ? 'left' : 'center'} monocolor={slideMode && true} />
               <ShowcaseCard
-                title="Nam sollicitudin"
-                desc="Aenean facilisis vitae purus facilisis semper."
+                title="Advanced Search"
+                desc="Search with Detailed filters based on your Project"
                 action="Try it"
                 image="/images/screen/thumb1.jpg"
               />
               <ShowcaseCard
-                title="Vestibulum nec"
-                desc="Cras convallis lacus orci, tristique tincidunt magna"
+                title="Automated Task Board"
+                desc="Single point of Action for managing the Lifecycle of a training"
                 action="See Demo"
                 image="/images/screen/thumb3.jpg"
               />
             </Grid>
             <Grid item sm={6} md={4} xs={12}>
               <ShowcaseCard
-                title="Curabitur"
-                desc="Nulla vehicula leo ut augue tincidunt"
+                title="Seamless Contracts"
+                desc="Now manage all Contracts and Training Documents in one view"
                 action="See Demo"
                 image="/images/screen/thumb5.jpg"
               />
               <ShowcaseCard
-                title="Nam sollicitudin"
-                desc="Aenean facilisis vitae purus facilisis semper."
+                title="Active Feedback and Review"
+                desc="We have over a 100 satisfied clients, this is the power of right feedback"
                 action="Try It"
                 image="/images/screen/thumb2.jpg"
               />
@@ -103,9 +103,9 @@ class Showcase extends React.Component {
             <Grid item sm={6} md={4} xs={12}>
               <div className={classes.lastShowcase}>
                 <ShowcaseCard
-                  title="Nam posuere accumsan"
-                  desc="Duis sed augue phasellus ante massa."
-                  action="See Demo"
+                  title="For Enterprise and Start-ups"
+                  desc="Large Business or a 2 member startup, we can meet your training needs"
+                  action="Try Now"
                   image="/images/screen/thumb4.jpg"
                 />
               </div>
