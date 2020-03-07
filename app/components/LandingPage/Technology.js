@@ -75,20 +75,20 @@ class Technology extends React.Component {
       <div className={classes.tech}>
         {!slideMode && (<ParallaxDecoStyled />)}
         <div className={slideMode ? classes.fullWidth : classes.container}>
-          <Title title="The technologies" desc="Cras convallis lacus orci, tristique tincidunt magna consequat in." align="center" monocolor={slideMode && true} />
+          <Title title="Training Experts in" desc="We specialize in finding the right and the brightest talent" align="center" monocolor={slideMode && true} />
           <Grid container className={classes.root} spacing={3}>
             <Grid item sm={4} xs={12}>
               <div className={classNames(classes.wool, slideMode && classes.slideMode)}>
                 <figure>
                   <img src={reactLogo} alt="react" />
                 </figure>
-                <Typography variant="h5" className={classes.react}>React.js</Typography>
+                <Typography variant="h5" className={classes.react}>UI/UX Architecture</Typography>
               </div>
               <div className={classNames(classes.wool, slideMode && classes.slideMode)}>
                 <figure>
                   <img src={routerLogo} alt="react router" />
                 </figure>
-                <Typography variant="h5" className={classes.router}>React Router</Typography>
+                <Typography variant="h5" className={classes.router}>Database Administrator</Typography>
               </div>
             </Grid>
             <Grid item sm={4} xs={12}>
@@ -97,16 +97,16 @@ class Technology extends React.Component {
                   <figure>
                     <img src={reduxLogo} alt="redux" />
                   </figure>
-                  <Typography variant="h5" className={classes.redux}>Redux.js</Typography>
+                  <Typography variant="h5" className={classes.redux}>Microservices Architecture</Typography>
                 </div>
                 <Hidden smDown>
-                  <Button variant="contained" size="large" color="secondary">Request To Implement Technology</Button>
+                  <Button variant="contained" size="large" color="secondary">Find your Training Expert now</Button>
                 </Hidden>
                 <div className={classNames(classes.wool, slideMode && classes.slideMode)}>
                   <figure>
                     <img src={webpackLogo} alt="webpack" />
                   </figure>
-                  <Typography variant="h5" className={classes.webpack}>Webpack</Typography>
+                  <Typography variant="h5" className={classes.webpack}>Container Applications</Typography>
                 </div>
               </div>
             </Grid>
@@ -115,13 +115,13 @@ class Technology extends React.Component {
                 <figure>
                   <img src={muiLogo} alt="mui" />
                 </figure>
-                <Typography variant="h5" className={classes.mui}>Material UI</Typography>
+                <Typography variant="h5" className={classes.mui}>Distributed Systems</Typography>
               </div>
               <div className={classNames(classes.wool, slideMode && classes.slideMode)}>
                 <figure>
                   <img src={jssLogo} alt="jss" />
                 </figure>
-                <Typography variant="h5" className={classes.jss}>CSS in JS</Typography>
+                <Typography variant="h5" className={classes.jss}>Core Java and J2EE</Typography>
               </div>
             </Grid>
           </Grid>

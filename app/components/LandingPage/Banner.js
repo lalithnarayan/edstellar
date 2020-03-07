@@ -75,7 +75,7 @@ class Banner extends React.Component {
         {!slideMode && <ParallaxDecoStyled />}
         <div className={!slideMode ? classes.container : ''}>
           <Typography component="h2" variant="h2" gutterBottom>Edstellar</Typography>
-          <Typography component="p" variant="h5" gutterBottom>A React.js Website Template </Typography>
+          <Typography component="p" variant="h5" gutterBottom>The Training Management Platform</Typography>
           <div className={classes.btnArea}>
             <Button
               size="large"

@@ -30,8 +30,8 @@ class Contact extends React.Component {
       <div className={classNames(classes.contact, !slideMode && classes.withBg)}>
         <div className={classes.container}>
           <div className={classes.contactBubble}>
-            <Title title="Say hello to us" align="left" nomargin />
-            <Typography component="p" className={classes.contactText}>Vivamus et luctus mauris. Maecenas nisl libero, tincidunt id odio id, feugiat vulputate quam. Vestibulum feugiat rhoncus metus. In non erat et ipsum molestie porta sit amet ut felis.</Typography>
+            <Title title="Reach out to us" align="left" nomargin />
+            <Typography component="p" className={classes.contactText}>If you have a custom requirement or are looking for tie-ups to source Trainers or Trainin Partners, get in touch.</Typography>
             <Grid container spacing={3}>
               <Grid item lg={6} xs={12}>
                 <FormControl className={classes.formControl}>

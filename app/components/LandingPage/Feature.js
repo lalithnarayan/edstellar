@@ -22,9 +22,9 @@ function createFeatureData(icon, title, desc) {
 class Feature extends React.Component {
   state = {
     featureList: [
-      createFeatureData('ios-infinite-outline', 'Lorem ipsum dolor', 'Nulla lobortis nunc vitae nisi semper semper. Sed mi neque, convallis at ipsum at, blandit pretium enim.'),
-      createFeatureData('ios-flower-outline', 'Lorem ipsum dolor', 'Nulla lobortis nunc vitae nisi semper semper. Sed mi neque, convallis at ipsum at, blandit pretium enim.'),
-      createFeatureData('ios-ionic-outline', 'Lorem ipsum dolor', 'Nulla lobortis nunc vitae nisi semper semper. Sed mi neque, convallis at ipsum at, blandit pretium enim.')
+      createFeatureData('ios-infinite-outline', 'Unified User Interface', 'One App for all your devices - Mobile, Desktop, Tabs'),
+      createFeatureData('ios-flower-outline', 'Seamless Interaction', 'All the complexity lies behinds the scenes, each action is a simple story... '),
+      createFeatureData('ios-ionic-outline', 'Scale Ready', 'Ready for handling training teams in an organisation or as an individual')
     ]
   }
 
@@ -34,7 +34,7 @@ class Feature extends React.Component {
     return (
       <div className={classNames(classes.feature, slideMode ? classes.mono : classes.color)}>
         <div className={!slideMode ? classes.container : ''}>
-          <Title title="Main Feature" align="center" monocolor={slideMode && true} />
+          <Title title="Welcome to Simplicity" align="center" monocolor={slideMode && true} />
           <Grid container className={classes.root} spacing={5}>
             { featureList.map(item => (
               <Grid key={item.id.toString()} item xs={12} md={4}>

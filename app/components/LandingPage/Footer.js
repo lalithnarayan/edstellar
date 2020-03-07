@@ -74,7 +74,7 @@ class Footer extends React.Component {
         </div>
         <div className={classes.copyright}>
           <div className={classes.container}>
-            <p>&copy; 2019 Dandelion Designs. All Right Reserved </p>
+            <p>&copy; 2020 Edstellar. All Right Reserved </p>
             <span>
               <IconButton color="primary" className={classes.button} href={link.twitter} target="_blank"><Ionicon icon="logo-twitter" /></IconButton>
               <IconButton color="primary" className={classes.button} href={link.pinterest} target="_blank"><Ionicon icon="logo-pinterest" /></IconButton>

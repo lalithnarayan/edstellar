@@ -17,15 +17,15 @@ class ShowcaseSlider extends React.Component {
               <Title title="Showcase" align="left" monocolor={slideMode && true} />
               <ShowcaseCard
                 landscape
-                title="Nam sollicitudin"
-                desc="Aenean facilisis vitae purus facilisis semper."
+                title="Advanced Search"
+                desc="Search with Detailed filters based on your Project"
                 action="Try it"
                 image="/images/screen/thumb1.jpg"
               />
               <ShowcaseCard
                 landscape
-                title="Vestibulum nec"
-                desc="Cras convallis lacus orci, tristique tincidunt magna"
+                title="A fully Automated Task Board"
+                desc="Single point of Action for managing the Lifecycle of a training"
                 action="See Demo"
                 image="/images/screen/thumb3.jpg"
               />
@@ -33,23 +33,23 @@ class ShowcaseSlider extends React.Component {
             <Grid item md={6} xs={12}>
               <ShowcaseCard
                 landscape
-                title="Curabitur"
-                desc="Nulla vehicula leo ut augue tincidunt"
+                title="Seamless Contracts and Documentation"
+                desc="Now manage all Contracts and Training Documents in one view"
                 action="See Demo"
                 image="/images/screen/thumb5.jpg"
               />
               <ShowcaseCard
                 landscape
-                title="Nam sollicitudin"
-                desc="Aenean facilisis vitae purus facilisis semper."
+                title="Active Feedback and Review"
+                desc="We have over a 100 satisfied clients, this is the power of right feedback"
                 action="Try It"
                 image="/images/screen/thumb2.jpg"
               />
               <ShowcaseCard
                 landscape
-                title="Nam posuere accumsan"
-                desc="Duis sed augue phasellus ante massa."
-                action="See Demo"
+                title="Built for Enterprise and Start-ups"
+                desc="Large Business or a 2 member startup, we can meet your training needs"
+                action="Try Now"
                 image="/images/screen/thumb4.jpg"
               />
             </Grid>
