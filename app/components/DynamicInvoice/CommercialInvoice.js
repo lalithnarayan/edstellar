@@ -31,14 +31,14 @@ const newDataTemplate = (id) => ({
 class CommercialInvoice extends React.Component {
   state = {
     header: 'INVOICE',
-    address: `Chris Coyier
-123 Appleseed Street
-Appleville, WI 53719
+    address: `Arvind Rongala
+123 JP Nagar Main Road,
+JP Nagar 5th Block, Bangalore 560083
 
 Phone: (555) 555-5555
     `,
-    title: `Widget Corp.
-c/o Steve Widget
+    title: `Edstellar Corp.
+c/o Arvind Rongala
     `,
     number: '123456',
     date: getDate(),
@@ -47,17 +47,24 @@ c/o Steve Widget
     dataTable: [
       {
         id: '1',
-        item: 'Web Updates',
-        desc: 'Monthly web updates for http://uxmaestro.com (Nov. 1 - Nov. 30, 2018)',
-        price: 650,
+        item: 'Training Resource',
+        desc: 'Training for Database Administration Level 4, Advance Course, December 15-31, 2019',
+        price: 6500,
         qty: 1,
       },
       {
         id: '2',
-        item: 'SSL Renewals',
-        desc: 'Yearly renewals of SSL certificates on main domain and several subdomains',
-        price: 75,
-        qty: 3,
+        item: 'Visa Charges',
+        desc: 'Visa Processing and Approval for Training Period',
+        price: 150,
+        qty: 1,
+      },
+      {
+        id: '3',
+        item: 'Travel and Accommodation',
+        desc: 'Flights and Hotel Accommodation with Balmer-Lawrie Associates',
+        price: 350,
+        qty: 1,
       },
     ],
     total: 0,

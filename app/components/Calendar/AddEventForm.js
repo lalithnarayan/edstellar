@@ -131,11 +131,11 @@ class AddEventForm extends React.Component {
             <div className={classes.fieldBasic}>
               <FormLabel component="label">Label Color</FormLabel>
               <Field name="hexColor" className={classes.inlineWrap} component={renderRadioGroup}>
-                <FormControlLabel value="EC407A" control={<Radio className={classes.redRadio} classes={{ root: classes.redRadio, checked: classes.checked }} />} label="Red" />
-                <FormControlLabel value="43A047" control={<Radio className={classes.greenRadio} classes={{ root: classes.greenRadio, checked: classes.checked }} />} label="Green" />
-                <FormControlLabel value="2096f3" control={<Radio className={classes.blueRadio} classes={{ root: classes.blueRadio, checked: classes.checked }} />} label="Blue" />
-                <FormControlLabel value="AB47BC" control={<Radio className={classes.violetRadio} classes={{ root: classes.violetRadio, checked: classes.checked }} />} label="Violet" />
-                <FormControlLabel value="FF5722" control={<Radio className={classes.orangeRadio} classes={{ root: classes.orangeRadio, checked: classes.checked }} />} label="Orange" />
+                <FormControlLabel value="EC407A" control={<Radio className={classes.redRadio} classes={{ root: classes.redRadio, checked: classes.checked }} />} label="On Site Training" />
+                <FormControlLabel value="43A047" control={<Radio className={classes.greenRadio} classes={{ root: classes.greenRadio, checked: classes.checked }} />} label="Hackathon" />
+                <FormControlLabel value="2096f3" control={<Radio className={classes.blueRadio} classes={{ root: classes.blueRadio, checked: classes.checked }} />} label="Conference" />
+                <FormControlLabel value="AB47BC" control={<Radio className={classes.violetRadio} classes={{ root: classes.violetRadio, checked: classes.checked }} />} label="Training" />
+                <FormControlLabel value="FF5722" control={<Radio className={classes.orangeRadio} classes={{ root: classes.orangeRadio, checked: classes.checked }} />} label="Training Session" />
               </Field>
             </div>
           </section>

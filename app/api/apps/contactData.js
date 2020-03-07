@@ -3,12 +3,12 @@ const contactData = [
   {
     id: '1',
     avatar: avatarApi[9],
-    name: 'James Doe',
+    name: 'Arvind Rongala',
     title: 'Administrator',
     phone: '+6281234567890',
     secondaryPhone: '+6280987654321',
-    personalEmail: 'johndoe@mail.com',
-    companyEmail: 'johndoe@company.com',
+    personalEmail: 'arvindron@mail.com',
+    companyEmail: 'arvindron@company.com',
     address: 'Ipsum Street no.77 Block A/5A, New York',
     website: 'http://doeclans.net',
     favorited: false
@@ -16,7 +16,7 @@ const contactData = [
   {
     id: '2',
     avatar: avatarApi[8],
-    name: 'Jim Doe',
+    name: 'Vishrut Jha',
     title: 'System Engineer',
     phone: '+657890321145',
     secondaryPhone: '',
@@ -29,7 +29,7 @@ const contactData = [
   {
     id: '3',
     avatar: avatarApi[2],
-    name: 'Jane Doe',
+    name: 'Lalith Kashyap',
     title: 'Executive',
     phone: '+45353695',
     secondaryPhone: '+678910111213',
@@ -42,7 +42,7 @@ const contactData = [
   {
     id: '4',
     avatar: avatarApi[10],
-    name: 'Jinx Doe',
+    name: 'Irfan Adam',
     title: 'Security',
     phone: '+678543210012',
     secondaryPhone: '',
@@ -55,7 +55,7 @@ const contactData = [
   {
     id: '5',
     avatar: avatarApi[4],
-    name: 'Jihan Doe',
+    name: 'Easwar Koka',
     title: 'Marketing',
     phone: '+45353695',
     secondaryPhone: '+56743210468',
@@ -68,7 +68,7 @@ const contactData = [
   {
     id: '6',
     avatar: avatarApi[7],
-    name: 'Johny Doe',
+    name: 'Madan Singh',
     title: 'Actor',
     phone: '+2234561234',
     secondaryPhone: '+6742234235666',
