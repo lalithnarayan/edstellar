@@ -17,6 +17,7 @@ import {
   AddressForm,
   PaymentForm,
   Review,
+  AdvanceSearchForm,
   SideReview
 } from 'dan-components';
 
@@ -71,6 +72,8 @@ function getStepContent(step) {
         return <div><SearchLocation/></div>;
     case 2:
       return <PaymentForm />;
+    // case 3: 
+    //   return <AdvanceSearchForm/>
     case 3:
       return <Review />;
     default:
@@ -116,7 +119,7 @@ class Checkout extends React.Component {
                     <span>
                       <Ionicon icon="ios-checkmark-circle-outline" />
                     </span>
-                    Thank you for your order.
+                    Thank you for your cr.
                   </Typography>
                   <Typography variant="subtitle1">
                     Your order number is&nbsp;
@@ -160,7 +163,7 @@ class Checkout extends React.Component {
                       className={classes.button}
                       size="large"
                     >
-                      {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                      {activeStep === steps.length - 1 ? 'Proceed to Advance Search' : 'Next'}
                     </Button>
                   </div>
                 </Fragment>

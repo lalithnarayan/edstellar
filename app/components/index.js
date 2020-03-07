@@ -74,6 +74,7 @@ export RegisterFormV3 from './Forms/RegisterFormV3';
 export ResetForm from './Forms/ResetForm';
 export LockForm from './Forms/LockForm';
 export AddressForm from './Forms/AddressForm';
+export AdvanceSearchForm from './Forms/AdvanceSearchForm';
 export PaymentForm from './Forms/PaymentForm';
 export Review from './Forms/Review';
 export SideReview from './Forms/SideReview';

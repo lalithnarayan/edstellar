@@ -10,13 +10,13 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 
 const products = [
-  { name: 'Product 1', desc: 'A nice thing', price: '$9.99' },
-  { name: 'Product 2', desc: 'Another thing', price: '$3.45' },
-  { name: 'Product 3', desc: 'Something else', price: '$6.51' },
-  { name: 'Product 4', desc: 'Best thing of all', price: '$14.11' },
-  { name: 'Shipping', desc: '', price: 'Free' },
+  { name: 'Network training', desc: 'Title', price: '$9.99' },
+  { name: 'Need a training for 30 freshers on networks as a part of onboarding', desc: 'Description', price: '$3.45' },
+  { name: '21-March to 31-March 2020', desc: 'Dates', price: '$14.11' },
+  { name: 'Networks, CCNA, CCNP', desc: 'Skills', price: 'Free' },
+  { name: 'Rs 3,400/-', desc: 'Expected Cost', price: 'Free' },
 ];
-const addresses = ['1 Material-UI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
+const addresses = ['IBM Building 2', 'Manyata Embassy Tech park', 'Hebbal, Bangalore', '560054', 'India'];
 const payments = [
   { name: 'Card type', detail: 'Visa' },
   { name: 'Card holder', detail: 'Mr John Smith' },
@@ -55,37 +55,37 @@ function Review(props) {
     <Fragment>
       <div className={classes.orderSummary}>
         <Typography variant="h6" gutterBottom>
-          Order summary
+          Project creation summary
         </Typography>
         <List>
           {products.map(product => (
             <Fragment key={product.name}>
               <ListItem className={classes.listItem}>
-                <ListItemText primary={product.name} secondary={product.desc} />
-                <Typography variant="body2">{product.price}</Typography>
+                <ListItemText primary={product.desc} secondary={product.name} />
+                {/* <Typography variant="body2">{product.price}</Typography> */}
               </ListItem>
               <li>
                 <Divider />
               </li>
             </Fragment>
           ))}
-          <ListItem className={classNames(classes.listItem, classes.totalRow)}>
+          {/* <ListItem className={classNames(classes.listItem, classes.totalRow)}>
             <ListItemText primary="Total" />
             <Typography variant="subtitle1" className={classes.total}>
               $34.06
             </Typography>
-          </ListItem>
+          </ListItem> */}
         </List>
         <div className={classes.address}>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} justify="center">
             <Grid item xs={12} sm={6}>
               <Typography variant="h6" gutterBottom className={classes.title}>
-                Shipping
+                Training Venue
               </Typography>
-              <Typography gutterBottom>John Smith</Typography>
+              {/* <Typography gutterBottom>John Smith</Typography> */}
               <Typography gutterBottom>{addresses.join(', ')}</Typography>
             </Grid>
-            <Grid item container direction="column" xs={12} sm={6}>
+            {/* <Grid item container direction="column" xs={12} sm={6}>
               <Typography variant="h6" gutterBottom className={classes.title}>
                 Payment details
               </Typography>
@@ -101,7 +101,7 @@ function Review(props) {
                   </Fragment>
                 ))}
               </Grid>
-            </Grid>
+            </Grid> */}
           </Grid>
         </div>
       </div>

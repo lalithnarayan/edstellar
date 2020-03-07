@@ -146,7 +146,7 @@ class ThemeWrapper extends React.Component {
               color="rgba(255,255,255,.9)"
               showSpinner={false}
             />
-            <TemplateSettings
+            {/* <TemplateSettings
               palette={palette}
               selectedValue={color}
               mode={mode}
@@ -163,7 +163,7 @@ class ThemeWrapper extends React.Component {
               changeBgPosition={this.handleChangeBgPosition}
               changeLayout={this.handleChangeLayout}
               changeDirection={this.handleChangeDirection}
-            />
+            /> */}
             <AppContext.Provider value={this.handleChangeMode}>
               {children}
             </AppContext.Provider>
