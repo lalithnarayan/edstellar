@@ -5674,7 +5674,7 @@ immutable@3.8.2, immutable@^3.8.1:
 
 immutable@~3.7.4:
   version "3.7.6"
-  resolved "http://registry.npmjs.org/immutable/-/immutable-3.7.6.tgz#13b4d3cb12befa15482a26fe1b2ebae640071e4b"
+  resolved "https://registry.npmjs.org/immutable/-/immutable-3.7.6.tgz#13b4d3cb12befa15482a26fe1b2ebae640071e4b"
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -7913,7 +7913,7 @@ os-homedir@^1.0.0:
 
 os-locale@^1.4.0:
   version "1.4.0"
-  resolved "http://registry.npmjs.org/os-locale/-/os-locale-1.4.0.tgz#20f9f17ae29ed345e8bde583b13d2009803c14d9"
+  resolved "https://registry.npmjs.org/os-locale/-/os-locale-1.4.0.tgz#20f9f17ae29ed345e8bde583b13d2009803c14d9"
   dependencies:
     lcid "^1.0.0"
 
@@ -8759,7 +8759,14 @@ pretty-format@^24.7.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
-prismjs@^1.11.0, prismjs@^1.8.4, prismjs@~1.15.0:
+prismjs@^1.23.0, prismjs@^1.8.4:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
+  integrity sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==
+  optionalDependencies:
+    clipboard "^2.0.0"
+
+prismjs@~1.15.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.15.0.tgz#8801d332e472091ba8def94976c8877ad60398d9"
   optionalDependencies:
@@ -9104,7 +9111,7 @@ react-display-name@^0.2.4:
 
 react-dom@15.4.2:
   version "15.4.2"
-  resolved "http://registry.npmjs.org/react-dom/-/react-dom-15.4.2.tgz#015363f05b0a1fd52ae9efdd3a0060d90695208f"
+  resolved "https://registry.npmjs.org/react-dom/-/react-dom-15.4.2.tgz#015363f05b0a1fd52ae9efdd3a0060d90695208f"
   dependencies:
     fbjs "^0.8.1"
     loose-envify "^1.1.0"
@@ -9573,7 +9580,7 @@ react-ultimate-pagination@^1.2.0:
 
 react@15.4.2:
   version "15.4.2"
-  resolved "http://registry.npmjs.org/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
+  resolved "https://registry.npmjs.org/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
   dependencies:
     fbjs "^0.8.4"
     loose-envify "^1.1.0"
